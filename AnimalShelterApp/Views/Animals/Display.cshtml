@@ -1,0 +1,32 @@
+@{
+    Layout = "_Layout";
+}
+
+@using AnimalShelterApp.Models;
+
+<div class="container">
+    <div class="text-center">
+        <h1 class="pt-3">Animal Details</h1>
+        <div class="my-4">
+            <ul class="list-group w-25 m-auto">
+                <li class="list-group-item pt-2 link-text"
+                    style="text-align: center; padding-top: 40px; list-style: none;">
+                    Name: @Model.Name
+                </li>
+                <li class="list-group-item pt-2 link-text"
+                    style="text-align: center; padding-top: 40px; list-style: none;">
+                    Admittance Date: @Model.start_date
+                </li>
+                <li class="list-group-item pt-2 link-text"
+                    style="text-align: center; padding-top: 40px; list-style: none;">
+                    Type: @Model.Type
+                </li>
+                <li class="list-group-item pt-2 link-text"
+                    style="text-align: center; padding-top: 40px; list-style: none;">
+                    Breed: @Model.Breed
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<p style="text-align: center; padding-top: 40px;"><a href="/animals">Back Home!</a></p>

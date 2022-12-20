@@ -1,0 +1,8 @@
+.link-text > a {
+    color: black;
+}
+
+.bold-text > a {
+    font-weight: bolder;
+}
+

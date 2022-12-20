@@ -1,0 +1,25 @@
+@{
+    Layout = "_Layout";
+}
+
+@model AnimalShelterApp.Models.Animal
+
+<body style="text-align: center; padding-top: 40px;">
+<h4 style="text-align: center; padding-top: 40px;">Add a new animal</h4>
+
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+    <label for="start_date">start_date</label>
+    <input type="datetime-local" name="start_date" id="start_date">
+    @Html.LabelFor(model => model.Type)
+    @Html.TextBoxFor(model => model.Type)
+    @Html.LabelFor(model => model.Breed)
+    @Html.TextBoxFor(model => model.Breed)
+    <input type="submit" value="Add new animal" />
+}
+<p style="text-align: center; padding-top: 40px;">@Html.ActionLink("Show all animals", "Index")</p>
+    
+</body>
